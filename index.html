@@ -4,7 +4,131 @@
         <title>Curriculum</title>
     </head>
     <body>
+        <nav>
+            <ul>
+                <li><a href="#Resumen">Resumen</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Experiencia">Experiencia</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#Educación">Educación</a></li>
+                <li><a href="#Premios">Premios</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Referencias">Referencias</a></li>
+            </ul>
+        </nav>
+
         <h1>Ariel Alejandro Ortiz Baque</h1>
         <p>Estudiante de computación | aaortiz@espol.edu.ec | 096 350 2059</p>
-    </body>
+
+        <section id="Resumen">
+            <h2>Resumen</h2>
+            <div class="video-wrapper" style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                <iframe src="https://www.youtube.com/embed/YQ-qToZUybM?autoplay=1&mute=1&rel=0&modestbranding=1" title="YouTube video player" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="Habilidades">
+            <h2>Habilidades</h2>
+            <p></p>
+        </section>
+
+        <section id="Experiencia">
+            <h2>Experiencia</h2>
+            <p></p>
+        </section>
+
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+
+            <article class="testimonio">
+                <blockquote>Transformó nuestro proyecto con claridad y entregas puntuales.</blockquote>
+                <p>María González, Product Manager. He trabajado con usted en la integración del producto y destacamos su comunicación clara, compromiso con los plazos y la calidad del trabajo.</p>
+            </article>
+
+            <article class="testimonio">
+                <blockquote>Su enfoque práctico y habilidades técnicas marcaron la diferencia.</blockquote>
+                <p>Carlos Méndez, Director de Tecnología. Colaboré con usted en varias fases del desarrollo; su liderazgo técnico y atención al detalle mejoraron significativamente nuestros resultados.</p>
+            </article>
+
+            <article class="testimonio">
+                <blockquote>Profesional, responsable y siempre dispuesto a ayudar.</blockquote>
+                <p>Lucía Fernández, Responsable de Recursos Humanos. Trabajé con usted en procesos de selección y onboarding; su profesionalismo y disposición facilitaron la incorporación y adaptación del equipo.</p>
+            </article>
+
+        </section>
+
+        <section id="Educación">
+            <h2>Educación</h2>
+            <p></p>
+        </section>
+
+        <section id="Premios">
+            <h2>Premios</h2>
+            <p></p>
+        </section>
+
+        <section id="Proyectos">
+            <h2>Proyectos</h2>
+            <p></p>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1350&q=80" alt="Desierto con dunas al atardecer" style="max-width:100%;height:auto;">
+                <figcaption>Imagen de desierto (ilustrativa) incluida en Proyectos.</figcaption>
+            </figure>
+        </section>
+
+        <section id="Referencias">
+            <h2>Referencias</h2>
+            <form id="contacto-proyectos" action="#" method="post" style="max-width:700px;">
+                <fieldset style="border:1px solid #ccc;padding:1rem;">
+                    <legend>Solicitud de colaboración en proyectos</legend>
+
+                    <div style="margin-bottom:0.5rem;">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required style="width:100%;padding:0.4rem;margin-top:0.25rem;">
+                    </div>
+
+                    <div style="margin-bottom:0.5rem;">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required style="width:100%;padding:0.4rem;margin-top:0.25rem;">
+                    </div>
+
+                    <div style="margin-bottom:0.5rem;">
+                        <label for="interes">Proyecto de interés (desplegable):</label>
+                        <select id="interes" name="interes" style="width:100%;padding:0.4rem;margin-top:0.25rem;">
+                            <option value="web">Desarrollo web</option>
+                            <option value="ia">Inteligencia Artificial</option>
+                            <option value="iot">IoT</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <fieldset style="border:0;padding:0;margin-bottom:0.5rem;">
+                        <legend>Prioridad (selección única):</legend>
+                        <label style="display:block;"><input type="radio" name="prioridad" value="alta" checked> Alta</label>
+                        <label style="display:block;"><input type="radio" name="prioridad" value="media"> Media</label>
+                        <label style="display:block;"><input type="radio" name="prioridad" value="baja"> Baja</label>
+                    </fieldset>
+
+                    <div style="margin-bottom:0.5rem;">
+                        <label for="tecnologias">Tecnologías (selección múltiple):</label>
+                        <select id="tecnologias" name="tecnologias[]" multiple size="4" style="width:100%;padding:0.4rem;margin-top:0.25rem;">
+                            <option value="python">Python</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="react">React</option>
+                            <option value="node">Node.js</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom:0.5rem;">
+                        <label for="mensaje">Descripción breve (área de texto):</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" style="width:100%;padding:0.4rem;margin-top:0.25rem;"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" style="padding:0.6rem 1rem;">Enviar solicitud</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
 </html>
