@@ -113,6 +113,29 @@ section{
 section form {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 1rem;
+    row-gap: 0.7rem;
     column-gap: 1rem;
+}
+
+section form label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#contacto{
+    background-color: rgb(240, 250, 231);
+}
+
+.opcion{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

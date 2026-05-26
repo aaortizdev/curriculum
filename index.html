@@ -32,7 +32,7 @@
         <main>
             <section id = "resumen">
                 <h2 class="subtitle">Resumen</h2>
-                <p>Soy estudiante de computación en <a href="https://www.espol.edu.ec/", >ESPOL</a>, interesado en seguir desarrollando habilidades técnicas, participar en proyectos académicos y contribuir a la comunidad tecnológica.</p>
+                <p>Estudiante de computación en la <a href="https://www.espol.edu.ec/", >ESPOL</a> con experiencia en proyectos de gestión de gimnasio y finanzas. Tengo habilidades en programación, bases de datos y diseño de interfaces. Mi objetivo es aprovechar mi capacidad de trabajo en equipo para desarrollar soluciones tecnológicas que generen un impacto positivo en la comunidad.</p>
                 
                 <iframe
                     width="315"
@@ -139,7 +139,7 @@
                 <form action="#" method="post">
                     <!--1. Texto en una línea-->
                     <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                    <input type="text" name="nombre" placeholder="Tu nombre completo">
 
                     <!--2. Lista despegable-->
                     <label for="motivo">Motivo de contacto: </label>
@@ -153,28 +153,43 @@
 
                     <!--3. Selección única-->
                     <p><strong>Cómo prefieres que te contacte?</strong></p>
-                    <input type="radio" id="correo" name="contacto" value="correo">
-                    <label for="correo">Correo electrónico</label>
+                    <div class="opcion">
+                        <input type="radio" id="correo" name="contacto" value="correo">
+                        <label for="correo">Correo electrónico</label>
+                    </div>
 
-                    <input type="radio" id="telefono" name="contacto" value="telefono">
-                    <label for="telefono">Teléfono</label>
+                    <div class="opcion">
+                        <input type="radio" id="telefono" name="contacto" value="telefono">
+                        <label for="telefono">Teléfono</label>
+                    </div>
 
-                    <input type="radio" id="linkedin" name="contacto" value="linkedin">
-                    <label for="linkedin">LinkedIn</label>
-
+                    <div class="opcion">
+                        <input type="radio" id="linkedin" name="contacto" value="linkedin">
+                        <label for="linkedin">LinkedIn</label>
+                    </div>
+                    
                     <!--4. Selección múltiple-->
                     <p><strong>Áreas de interés:</strong></p>
-                    <input type="checkbox" id="web" name="areas" value="web">
-                    <label for="web">Desarrollo web</label>
 
-                    <input type="checkbox" id="movil" name="areas" value="movil">
-                    <label for="movil">Desarrollo móvil</label>
+                    <div class="checkbox"> 
+                        <input type="checkbox" id="web" name="areas" value="web">
+                        <label for="web">Desarrollo web</label>
+                    </div>
 
-                    <input type="checkbox" id="bd" name="areas" value="bd">
-                    <label for="bd">Base de datos</label>
+                    <div class="checkbox"> 
+                        <input type="checkbox" id="movil" name="areas" value="movil">
+                        <label for="movil">Desarrollo móvil</label>
+                    </div>
 
-                    <input type="checkbox" id="otro" name="areas" value="otro">
-                    <label for="otro">Otro</label>
+                    <div class="checkbox"> 
+                        <input type="checkbox" id="bd" name="areas" value="bd">
+                        <label for="bd">Base de datos</label>
+                    </div>
+
+                    <div class="checkbox"> 
+                        <input type="checkbox" id="otro" name="areas" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
 
                     <!--5. Área de texto-->
                     <label for="mensaje">Mensaje: </label>
