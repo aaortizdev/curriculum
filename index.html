@@ -4,14 +4,14 @@
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Curriculum</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
     </head>
     <body>
         <header>
-            <img
+            <img 
+                id = "photo"
                 src="img/Foto.png"
-                alt="Foto de perfil"
-                width="150"
-                height="200">
+                alt="Foto de perfil">
 
             <h1>Ariel Ortiz</h1>
             <p> Estudiante de Computación | aaortiz@espol.edu.ec | +593 96 350 2059</p>
@@ -30,8 +30,8 @@
         </nav>
         <main>
             <section id = "resumen">
-                <h2>Resumen</h2>
-                <p>Soy estudiante de computación en <a href="https://www.espol.edu.ec/">ESPOL</a> </p>
+                <h2 class="subtitle">Resumen</h2>
+                <p>Soy estudiante de computación en <a href="https://www.espol.edu.ec/", >ESPOL</a>, interesado en seguir desarrollando habilidades técnicas, participar en proyectos académicos y contribuir a la comunidad tecnológica.</p>
                 
                 <iframe
                     width="315"
@@ -43,7 +43,7 @@
             </section>
 
             <section id = "habilidades">
-                <h2>Habilidades</h2>
+                <h2 class="subtitle">Habilidades</h2>
                 <ul>
                     <li>Programación: Python, Java</li>
                     <li>Desarrollo Web: HTML, CSS</li>
@@ -53,12 +53,22 @@
                 </ul>
             </section>
 
-            <section id = "experiencia">
-                <h2>Experiencia</h2>
+            <section id="experiencia">
+                <h2 class="subtitle">Experiencia</h2>
+                <article>
+                    <h3>Ayudante de Docencia – Sistemas de Bases de Datos</h3>
+                    <p>Escuela Superior Politécnica del Litoral (ESPOL) · Temporal</p>
+                    <p>oct. 2025 - ene. 2026 · Guayaquil, Ecuador · En remoto</p>
+                    <ul>
+                        <li>Apoyo académico a estudiantes en la asignatura de Bases de Datos</li>
+                        <li>Resolución de dudas y seguimiento de avances</li>
+                        <li>Trabajo colaborativo con el equipo docente</li>
+                    </ul>
+                </article>
             </section>
 
             <section id = "educacion">
-                <h2>Educación</h2>
+                <h2 class="subtitle">Educación</h2>
                 <ol>
                     <li>Bachillerato - Colegio Montepiedra (2017-2023)</li>
                     <li>Ingeniería en Computación - ESPOL (2023 - actualidad)</li>
@@ -66,7 +76,7 @@
             </section>
 
             <section id = "proyectos">
-                <h2>Proyectos</h2>
+                <h2 class="subtitle">Proyectos</h2>
                 <table>
                     <tr>
                         <th>Proyecto</th>
@@ -96,11 +106,13 @@
             </section>
 
             <section id = "premiosyreconocimientos">
-                <h2>Premios y Reconocimientos</h2>
+                <h2 class="subtitle">Premios y Reconocimientos</h2>
+                <p><strong>IEEE-HKN (Eta Kappa Nu) Membership</strong></p>
+                <p>Miembro de IEEE-HKN (Eta Kappa Nu), sociedad de honor internacional del IEEE que reconoce la excelencia académica, el liderazgo y el servicio.</p>
             </section>
 
             <section id = "referencias">
-                <h2>Referencias</h2>
+                <h2 class="subtitle">Referencias</h2>
                 <article>
                     <blockquote>
                         <p>"Trabajar con Ariel fue una experiencia muy positiva: resolvió incidencias con rapidez y siempre mantuvo una comunicación clara con el equipo."</p>
@@ -122,7 +134,7 @@
             </section>
 
             <section id = "contacto">
-                <h2>Contacto</h2>
+                <h2 class="subtitle">Contacto</h2>
                 <form action="#" method="post">
                     <!--1. Texto en una línea-->
                     <label for="nombre">Nombre: </label>
@@ -195,4 +207,3 @@
 
     </body>
 </html>
-
